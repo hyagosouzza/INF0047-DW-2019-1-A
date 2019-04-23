@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../src/assets/sass/variables';
+
+body {
+    background-color: $main-color;
+    font-family: 'Signika', sans-serif;
+}
+
+
+.font-escrita {
+    font-family: $font-escrita;
+}
+
+.input-field>label, input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: $second-color;
+}
+
+input {
+    border-color: $second-color !important;
+}
+
+span {
+    color: $second-color;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid $second-color;
+    border-bottom: 2px solid $second-color;
+}
