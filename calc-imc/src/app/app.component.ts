@@ -37,13 +37,13 @@ export class AppComponent implements OnInit, DoCheck {
       this.style = 'orangered';
     } else if (this.imc >= 30 && this.imc <= 34.9) {
       this.info = this.arrayInfo[3];
-      this.style = 'crimson';
+      this.style = '#eb1f48';
     } else if (this.imc >= 35 && this.imc <= 39.9) {
       this.info = this.arrayInfo[4];
-      this.style = 'crimson';
+      this.style = '#c51236';
     } else if (this.imc >= 40){
       this.info = this.arrayInfo[5];
-      this.style = 'crimson';
+      this.style = '#960e29';
     } else {
       this.info = '';
     }
