@@ -1,0 +1,40 @@
+<!-- Header -->
+<div class="section">
+  <div class="conatiner">
+    <div class="row">
+      <div class="s12 center-align">
+        <h2 class="font-estilo text-whitesmoke">Calculadora de IMC</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forms -->
+<div class="section">
+  <div class="container">
+    <div class="row center-align">
+      <div class="input-field col s12 m6">
+        <input id="altura" [(ngModel)]="altura" type="text" class="validate" name="altura">
+        <label for="altura">Altura em M</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input id="peso" [(ngModel)]="peso" type="text" class="validate" name="peso">
+        <label for="peso">Peso em KG</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Resultado -->
+<div class="section">
+  <div class="conatiner">
+    <div class="row">
+      <div class="s12 center-align">
+        <h4 class="font-estilo text-whitesmoke">Índice de Massa Corporal</h4>
+        <a class="btn-floating btn-large waves-effect waves-light"><span class="animated fadeInUp" *ngIf="imc">{{imc}}</span></a>
+        <p *ngIf="info" class="animated fadeInDown"><a [style.background-color]="infoStyle()" class="btn-info waves-effect waves-light btn">{{info}}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

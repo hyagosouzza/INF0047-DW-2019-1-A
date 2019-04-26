@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+.font-estilo {
+    font-family: 'Lobster', cursive;
+}
+
+.text-whitesmoke {
+    color: whitesmoke;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    background-color: #00c853;
+}
+
+.input-field>label, input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: whitesmoke;
+}
+
+input {
+    border-color: whitesmoke !important;
+    color: whitesmoke;
+}
+
+.btn-info {
+    border-radius: 20px;
+}
